@@ -15,7 +15,11 @@ class FirstScreenView: UIView {
         button.tintColor = .systemBackground
         button.setTitle("Start", for: .normal)
         button.accessibilityLabel = "Start"
-        button.configuration = .filled()
+        if #available(iOS 15.0, *) {
+            button.configuration = .filled()
+        } else {
+            button.layer.cornerRadius = 30
+        }
         button.setTitleColor(.systemYellow, for: .normal)
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
         return button
