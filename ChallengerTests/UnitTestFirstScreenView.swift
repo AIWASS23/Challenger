@@ -16,12 +16,28 @@ class FirstScreenViewTests: XCTestCase {
 
         let button = sut.navigationButton
 
-        XCTAssertEqual(button.tintColor, UIColor.white)
+        XCTAssertEqual(button.tintColor, UIColor.systemBackground)
         XCTAssertNotNil(button.setTitle("Start", for: UIControl.State.normal))
         XCTAssertEqual(button.accessibilityLabel, "Start")
         XCTAssertNotNil(button.configuration)
         XCTAssertNotNil(button.setTitleColor(UIColor.red, for: UIControl.State.normal))
         XCTAssertNotNil(button.titleLabel?.font)
         XCTAssertFalse(button.translatesAutoresizingMaskIntoConstraints)
+    }
+
+    func testPageTitle() throws {
+        let title = sut.pageTitle
+
+        XCTAssertEqual(title.text, "Challenger")
+        XCTAssertEqual(title.textColor, UIColor.systemYellow)
+        XCTAssertFalse(title.translatesAutoresizingMaskIntoConstraints)
+        XCTAssertEqual(title.font, UIFont.systemFont(ofSize: 40, weight: .heavy))
+    }
+
+    func testImagePage() throws {
+        let image = sut.imagePage
+
+        XCTAssertEqual(image.image!, UIImage(named: "interpreter"))
+        XCTAssertFalse(image.translatesAutoresizingMaskIntoConstraints)
     }
 }

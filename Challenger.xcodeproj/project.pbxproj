@@ -16,15 +16,15 @@
 		14373B4C28F442F5006767C2 /* Challenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14373B4A28F442F5006767C2 /* Challenger.xcdatamodeld */; };
 		14373B4E28F442F5006767C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14373B4D28F442F5006767C2 /* Assets.xcassets */; };
 		14373B5128F442F6006767C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14373B4F28F442F6006767C2 /* LaunchScreen.storyboard */; };
-		14373B5C28F442F6006767C2 /* ChallengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B5B28F442F6006767C2 /* ChallengerTests.swift */; };
-		14373B6628F442F6006767C2 /* ChallengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B6528F442F6006767C2 /* ChallengerUITests.swift */; };
-		14373B6828F442F6006767C2 /* ChallengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B6728F442F6006767C2 /* ChallengerUITestsLaunchTests.swift */; };
+		14373B5C28F442F6006767C2 /* UnitTestFirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B5B28F442F6006767C2 /* UnitTestFirstScreenView.swift */; };
+		14373B6628F442F6006767C2 /* UITestsFirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B6528F442F6006767C2 /* UITestsFirstScreen.swift */; };
 		14373B7828F45801006767C2 /* ApiGroot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B7728F45801006767C2 /* ApiGroot.swift */; };
 		14373B7C28F58B2E006767C2 /* ModelGroot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14373B7B28F58B2E006767C2 /* ModelGroot.swift */; };
 		1481680028FD7229003052A4 /* SecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148167FF28FD7229003052A4 /* SecondScreenView.swift */; };
 		1481680228FD92B2003052A4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680128FD92B2003052A4 /* ThirdViewController.swift */; };
 		1481680428FD933C003052A4 /* ThirdScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680328FD933C003052A4 /* ThirdScreenView.swift */; };
 		14816808290012DA003052A4 /* GrootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14816807290012DA003052A4 /* GrootViewModel.swift */; };
+		1481680C29007395003052A4 /* UnitTestSecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +57,16 @@
 		14373B5028F442F6006767C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14373B5228F442F6006767C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14373B5728F442F6006767C2 /* ChallengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14373B5B28F442F6006767C2 /* ChallengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerTests.swift; sourceTree = "<group>"; };
+		14373B5B28F442F6006767C2 /* UnitTestFirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestFirstScreenView.swift; sourceTree = "<group>"; };
 		14373B6128F442F6006767C2 /* ChallengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14373B6528F442F6006767C2 /* ChallengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerUITests.swift; sourceTree = "<group>"; };
-		14373B6728F442F6006767C2 /* ChallengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14373B6528F442F6006767C2 /* UITestsFirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsFirstScreen.swift; sourceTree = "<group>"; };
 		14373B7728F45801006767C2 /* ApiGroot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGroot.swift; sourceTree = "<group>"; };
 		14373B7B28F58B2E006767C2 /* ModelGroot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGroot.swift; sourceTree = "<group>"; };
 		148167FF28FD7229003052A4 /* SecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenView.swift; sourceTree = "<group>"; };
 		1481680128FD92B2003052A4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		1481680328FD933C003052A4 /* ThirdScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenView.swift; sourceTree = "<group>"; };
 		14816807290012DA003052A4 /* GrootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrootViewModel.swift; sourceTree = "<group>"; };
+		1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestSecondScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,8 @@
 		14373B5A28F442F6006767C2 /* ChallengerTests */ = {
 			isa = PBXGroup;
 			children = (
-				14373B5B28F442F6006767C2 /* ChallengerTests.swift */,
+				14373B5B28F442F6006767C2 /* UnitTestFirstScreenView.swift */,
+				1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */,
 			);
 			path = ChallengerTests;
 			sourceTree = "<group>";
@@ -170,8 +171,7 @@
 		14373B6428F442F6006767C2 /* ChallengerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				14373B6528F442F6006767C2 /* ChallengerUITests.swift */,
-				14373B6728F442F6006767C2 /* ChallengerUITestsLaunchTests.swift */,
+				14373B6528F442F6006767C2 /* UITestsFirstScreen.swift */,
 			);
 			path = ChallengerUITests;
 			sourceTree = "<group>";
@@ -382,7 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14373B5C28F442F6006767C2 /* ChallengerTests.swift in Sources */,
+				1481680C29007395003052A4 /* UnitTestSecondScreenView.swift in Sources */,
+				14373B5C28F442F6006767C2 /* UnitTestFirstScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,8 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14373B6628F442F6006767C2 /* ChallengerUITests.swift in Sources */,
-				14373B6828F442F6006767C2 /* ChallengerUITestsLaunchTests.swift in Sources */,
+				14373B6628F442F6006767C2 /* UITestsFirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
