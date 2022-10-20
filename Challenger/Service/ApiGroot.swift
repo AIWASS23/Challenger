@@ -36,8 +36,8 @@ class API {
 
         var urlRequest = URLRequest(url: URL(string: "https://api.funtranslations.com/translate/groot")!)
         urlRequest.httpMethod = "POST"
-        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        //urlRequest.allHTTPHeaderFields = ["Content-Type": "application/json"]
+//        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        urlRequest.allHTTPHeaderFields = ["Content-Type": "application/json"]
 
         do {
             urlRequest.httpBody = try JSONEncoder().encode(PostGroot(textPost: text))
@@ -48,5 +48,30 @@ class API {
         } catch {
             print(error)
         }
+    }
+
+    static func getCompletion(completion: @escaping (ResponseGroot) -> ()){
+
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "api.funtranslations.com"
+        components.path = "/translate/groot"
+        components.queryItems = [URLQueryItem(name: "text", value: "")]
+
+        let url = components.url!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        urlRequest.allHTTPHeaderFields = ["Content-Type": "application/json"]
+
+        let task = URLSession.shared.dataTask(with: urlRequest) {(data, response, error) in
+            guard let responseData = data else { return }
+            do {
+                let groot = try JSONDecoder().decode(ResponseGroot.self, from: responseData)
+                completion(groot)
+            } catch let error {
+                print(error)
+            }
+        }
+        task.resume()
     }
 }
