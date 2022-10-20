@@ -52,7 +52,7 @@ class SecondScreenView: UIView {
 
             buttonGroot.heightAnchor.constraint(equalToConstant: 60),
             buttonGroot.widthAnchor.constraint(equalToConstant: 60),
-            buttonGroot.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -100),
+            buttonGroot.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0),
             buttonGroot.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 200)
         ])
     }

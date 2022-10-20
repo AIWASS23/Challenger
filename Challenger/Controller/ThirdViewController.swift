@@ -11,6 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     var screen: ThirdScreenView?
+    var viewModel: GrootViewModel = GrootViewModel()
 
     override func loadView() {
         self.screen = ThirdScreenView()
