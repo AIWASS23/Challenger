@@ -7,9 +7,13 @@
 
 import Foundation
 
+enum ErrorAPI: Error {
+    case defaultError
+}
+
 class API {
 
-    static func getAPI(text: PostGroot) async -> [ResponseGroot] {
+    static func getAPI(text: PostGroot) async -> Result<ResponseGroot, ErrorAPI> {
 
         var components = URLComponents()
         components.scheme = "https"
@@ -25,11 +29,11 @@ class API {
 
         do {
             let (data, _) = try await URLSession.shared.data(for: urlRequest)
-            return try JSONDecoder().decode([ResponseGroot].self, from: data)
+            let response = try JSONDecoder().decode(ResponseGroot.self, from: data)
+            return .success(response)
         } catch {
-            print(error)
+            return .failure(.defaultError)
         }
-        return []
     }
 
     static func postAPI(text: String) async {
@@ -40,7 +44,7 @@ class API {
         urlRequest.allHTTPHeaderFields = ["Content-Type": "application/json"]
 
         do {
-            urlRequest.httpBody = try JSONEncoder().encode(PostGroot(textPost: text))
+            urlRequest.httpBody = try JSONEncoder().encode(PostGroot(text: text))
             let (_, response) = try await URLSession.shared.data(for: urlRequest)
             if let responseHead = response as? HTTPURLResponse {
                 print(responseHead.statusCode == 200)

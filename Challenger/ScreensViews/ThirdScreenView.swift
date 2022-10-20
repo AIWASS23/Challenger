@@ -10,6 +10,8 @@ import UIKit
 
 class ThirdScreenView: UIView {
 
+    var didTapButton: ((String?) -> Void)?
+
     lazy var pageTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -73,8 +75,4 @@ class ThirdScreenView: UIView {
             translationButton.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
-//
-//    func submitTextAPI() {
-//        return GrootViewModel.addTranslateGroot(boxText.text)
-//    }
 }

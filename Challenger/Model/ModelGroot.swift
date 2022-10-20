@@ -8,26 +8,20 @@
 import Foundation
 
 struct PostGroot: Encodable {
-
-    let textPost: String
-
-    init(textPost: String) {
-        self.textPost = textPost
-    }
+    let text: String
 }
 
 struct ResponseGroot: Decodable {
+    let success: ResponseGrootTotal
+    let contents: ResponseGrootContent
+}
 
-    let success: UInt
+struct ResponseGrootTotal: Decodable {
+    let total: Int
+}
+
+struct ResponseGrootContent: Decodable {
     let translated: String
-    let textResponse: String
+    let text: String
     let translation: String
-
-    init(success: UInt, translated: String, textResponse: String, translation: String) {
-        self.success = success
-        self.translated = translated
-        self.textResponse = textResponse
-        self.translation = translation
-
-    }
 }
