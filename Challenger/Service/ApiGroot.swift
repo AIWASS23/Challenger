@@ -7,10 +7,6 @@
 
 import Foundation
 
-enum ErrorAPI: Error {
-    case defaultError
-}
-
 class API {
 
     static func getAPI(text: PostGroot) async -> Result<ResponseGroot, ErrorAPI> {
@@ -78,4 +74,8 @@ class API {
         }
         task.resume()
     }
+}
+
+enum ErrorAPI: Error {
+    case defaultError
 }
