@@ -14,7 +14,7 @@ class FirstViewController: UIViewController {
     override func loadView() {
         self.screen = FirstScreenView()
         self.view = self.screen
-        screen?.navigationButton.addTarget(self, action: #selector(navigate), for: .touchUpInside)
+        screen?.navigationButtonFirst.addTarget(self, action: #selector(navigate), for: .touchUpInside)
     }
 
     override func viewDidLoad() {

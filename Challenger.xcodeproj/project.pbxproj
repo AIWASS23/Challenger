@@ -25,6 +25,8 @@
 		1481680428FD933C003052A4 /* ThirdScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680328FD933C003052A4 /* ThirdScreenView.swift */; };
 		14816808290012DA003052A4 /* GrootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14816807290012DA003052A4 /* GrootViewModel.swift */; };
 		1481680C29007395003052A4 /* UnitTestSecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */; };
+		149B0C0F2902C0E600A0BE19 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C0E2902C0E600A0BE19 /* Button.swift */; };
+		149B0C112902D11300A0BE19 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C102902D11300A0BE19 /* Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		1481680328FD933C003052A4 /* ThirdScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenView.swift; sourceTree = "<group>"; };
 		14816807290012DA003052A4 /* GrootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrootViewModel.swift; sourceTree = "<group>"; };
 		1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestSecondScreenView.swift; sourceTree = "<group>"; };
+		149B0C0E2902C0E600A0BE19 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		149B0C102902D11300A0BE19 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				143048B428F985AA00A589D9 /* GradienteColor.swift */,
+				149B0C0E2902C0E600A0BE19 /* Button.swift */,
+				149B0C102902D11300A0BE19 /* Label.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,7 +376,9 @@
 				14373B7C28F58B2E006767C2 /* ModelGroot.swift in Sources */,
 				14373B4C28F442F5006767C2 /* Challenger.xcdatamodeld in Sources */,
 				14373B4628F442F5006767C2 /* FirstViewController.swift in Sources */,
+				149B0C112902D11300A0BE19 /* Label.swift in Sources */,
 				143048B728F9A04C00A589D9 /* SecondViewController.swift in Sources */,
+				149B0C0F2902C0E600A0BE19 /* Button.swift in Sources */,
 				14816808290012DA003052A4 /* GrootViewModel.swift in Sources */,
 				1481680228FD92B2003052A4 /* ThirdViewController.swift in Sources */,
 				14373B4228F442F5006767C2 /* AppDelegate.swift in Sources */,

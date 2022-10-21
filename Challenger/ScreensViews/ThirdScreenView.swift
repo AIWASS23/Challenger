@@ -12,15 +12,6 @@ class ThirdScreenView: UIView {
 
     var didTapButton: ((String?) -> Void)?
 
-    lazy var pageTitle: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Challenger"
-        label.font = UIFont.systemFont(ofSize: 40, weight: .heavy)
-        label.textColor = .systemYellow
-        return label
-    }()
-
     lazy var boxText: UITextView = {
         let textView = UITextView()
         textView.font = UIFont.preferredFont(forTextStyle: .body)
@@ -33,26 +24,22 @@ class ThirdScreenView: UIView {
         return textView
     }()
 
-    lazy var translationButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .systemBackground
-        button.setTitle("Translation", for: .normal)
-        button.accessibilityLabel = "Translation"
-        if #available(iOS 15.0, *) {
-            button.configuration = .filled()
-        } else {
-            button.layer.cornerRadius = 30
-        }
-        button.setTitleColor(.systemYellow, for: .normal)
-        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-        return button
-    }()
+    lazy var pageTitleThird = self.pageTitle(text: "Challenger", ofSize: 40)
+    lazy var translationButton = self.navigationButton(setTitle: "Translation")
 
-    override func layoutSubviews() {
-        super.layoutSubviews()
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        setGradientBackground()
+//        self.addSubview(pageTitle)
+//        self.addSubview(boxText)
+//        self.addSubview(translationButton)
+//        setupConstraints()
+//    }
+
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
         setGradientBackground()
-        self.addSubview(pageTitle)
+        self.addSubview(pageTitleThird)
         self.addSubview(boxText)
         self.addSubview(translationButton)
         setupConstraints()
@@ -61,8 +48,8 @@ class ThirdScreenView: UIView {
     func setupConstraints() {
         NSLayoutConstraint.activate([
 
-            pageTitle.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 95),
-            pageTitle.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            pageTitleThird.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 95),
+            pageTitleThird.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
 
             boxText.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             boxText.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),

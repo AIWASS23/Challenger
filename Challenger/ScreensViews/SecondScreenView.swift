@@ -10,7 +10,7 @@ import UIKit
 
 class SecondScreenView: UIView {
 
-    lazy var pageTitle: UILabel = {
+    let pageTitle: UILabel = {
         let label = UILabel()
         label.text = "Choose Translation"
         label.font = UIFont.systemFont(ofSize: 36, weight: .heavy)
@@ -19,26 +19,26 @@ class SecondScreenView: UIView {
         return label
     }()
 
-    lazy var buttonGroot: UIButton = {
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "groot"), for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
+    lazy var interpreterButton = self.button(imgName: "interpreter")
+    lazy var buttonGroot = self.button(imgName: "groot")
 
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
         setGradientBackground()
+        self.addSubview(interpreterButton)
         self.addSubview(pageTitle)
         self.addSubview(buttonGroot)
         setupConstraints()
     }
-
+    // executa depois do layout da view ter sido contruido na tela, inclusive depois de aplicar constraints
+    // sempre que alguma coisa no layout da view mudar, roda de novo esse metodo
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//
+//    }
+//
 //    override init(frame: CGRect) {
 //        super.init(frame: frame)
-//        self.addSubview(pageTitle)
-//        self.addSubview(buttonGroot)
-//        setupConstraints()
 //    }
 //
 //    required init?(coder: NSCoder) {
@@ -53,7 +53,12 @@ class SecondScreenView: UIView {
             buttonGroot.heightAnchor.constraint(equalToConstant: 60),
             buttonGroot.widthAnchor.constraint(equalToConstant: 60),
             buttonGroot.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0),
-            buttonGroot.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 200)
+            buttonGroot.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 200),
+
+            interpreterButton.heightAnchor.constraint(equalToConstant: 60),
+            interpreterButton.widthAnchor.constraint(equalToConstant: 60),
+            interpreterButton.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -100),
+            interpreterButton.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0)
         ])
     }
 }
