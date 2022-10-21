@@ -14,7 +14,7 @@ class FirstScreenViewTests: XCTestCase {
 
     func testNavigationButton() throws {
 
-        let button = sut.navigationButton
+        let button = sut.navigationButtonFirst
 
         XCTAssertEqual(button.tintColor, UIColor.systemBackground)
         XCTAssertNotNil(button.setTitle("Start", for: UIControl.State.normal))
@@ -26,7 +26,7 @@ class FirstScreenViewTests: XCTestCase {
     }
 
     func testPageTitle() throws {
-        let title = sut.pageTitle
+        let title = sut.pageTitleFirst
 
         XCTAssertEqual(title.text, "Challenger")
         XCTAssertEqual(title.textColor, UIColor.systemYellow)

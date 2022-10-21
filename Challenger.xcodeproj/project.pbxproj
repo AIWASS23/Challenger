@@ -27,6 +27,8 @@
 		1481680C29007395003052A4 /* UnitTestSecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */; };
 		149B0C0F2902C0E600A0BE19 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C0E2902C0E600A0BE19 /* Button.swift */; };
 		149B0C112902D11300A0BE19 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C102902D11300A0BE19 /* Label.swift */; };
+		149B0C142902E23F00A0BE19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C132902E23F00A0BE19 /* Constants.swift */; };
+		149B0C162902F70000A0BE19 /* UITestSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestSecondScreenView.swift; sourceTree = "<group>"; };
 		149B0C0E2902C0E600A0BE19 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		149B0C102902D11300A0BE19 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		149B0C132902E23F00A0BE19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 				14049A6F28F83EB7006F2260 /* ScreensViews */,
 				143048B328F9858700A589D9 /* Extensions */,
 				143048B828F9A3AB00A589D9 /* Controller */,
+				149B0C122902E21300A0BE19 /* Utils */,
 				1481680929003A97003052A4 /* Application */,
 				14373B4D28F442F5006767C2 /* Assets.xcassets */,
 				14373B5228F442F6006767C2 /* Info.plist */,
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				14373B6528F442F6006767C2 /* UITestsFirstScreen.swift */,
+				149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */,
 			);
 			path = ChallengerUITests;
 			sourceTree = "<group>";
@@ -214,6 +220,14 @@
 				14373B4F28F442F6006767C2 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		149B0C122902E21300A0BE19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				149B0C132902E23F00A0BE19 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +389,7 @@
 				14373B7828F45801006767C2 /* ApiGroot.swift in Sources */,
 				14373B7C28F58B2E006767C2 /* ModelGroot.swift in Sources */,
 				14373B4C28F442F5006767C2 /* Challenger.xcdatamodeld in Sources */,
+				149B0C142902E23F00A0BE19 /* Constants.swift in Sources */,
 				14373B4628F442F5006767C2 /* FirstViewController.swift in Sources */,
 				149B0C112902D11300A0BE19 /* Label.swift in Sources */,
 				143048B728F9A04C00A589D9 /* SecondViewController.swift in Sources */,
@@ -400,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14373B6628F442F6006767C2 /* UITestsFirstScreen.swift in Sources */,
+				149B0C162902F70000A0BE19 /* UITestSecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

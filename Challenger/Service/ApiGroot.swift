@@ -17,9 +17,9 @@ class API {
         components.path = "/translate/groot"
         components.queryItems = [URLQueryItem(name: "text", value: "\(text)")]
 //        components.string
-        let url1 = components.url!
+        let url = components.url!
 
-        var urlRequest = URLRequest(url: url1)
+        var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         urlRequest.allHTTPHeaderFields = ["Content-Type": "application/json"]
 
@@ -78,4 +78,5 @@ class API {
 
 enum ErrorAPI: Error {
     case defaultError
+    case invalidServerResponse
 }
