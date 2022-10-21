@@ -8,15 +8,24 @@
  import Foundation
  import UIKit
 
- class GrootViewModel {
+class GrootViewModel: ObservableObject {
 
-     func groot(url: URL) async {
+    @Published var groots: [ResponseGroot] = []
 
-         do {
-             let groots = try await API.getAPI
-         } catch {
-             print(error)
-         }
-     }
-     
+    @MainActor
+    func publishGroots(groots: [ResponseGroot]) {
+        self.groots = groots
+    }
+
+    func fetchGroots(text: String) async {
+        let text = PostGroot(text: text)
+        let result = await API.getAPI(text: text)
+        switch result {
+        case .success(let response):
+            await publishGroots(groots: [response])
+        case .failure(_):
+            return
+        }
+
+    }
  }
