@@ -5,10 +5,10 @@
 //  Created by Marcelo De Araújo on 19/10/22.
 //
 
-//import Foundation
-//import UIKit
+// import Foundation
+// import UIKit
 
-//class GrootViewModel: ObservableObject {
+// class GrootViewModel: ObservableObject {
 //
 //    @Published var groot: [ResponseGroot] = []
 //    @Published var text: [PostGroot] = []
@@ -30,4 +30,4 @@
 //    func addTranslateGroot(textTranslate: String) async {
 //        await API.postAPI(text: textTranslate)
 //    }
-//}
+// }

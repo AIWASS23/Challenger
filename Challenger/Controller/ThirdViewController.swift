@@ -34,10 +34,10 @@ class ThirdViewController: UIViewController {
                 let response = await API.getAPI(text: param)
 
                 switch response {
-                    case .success(let model):
-                        print(model)
-                    case .failure(let failure):
-                        print(failure)
+                case .success(let model):
+                    print(model)
+                case .failure(let failure):
+                    print(failure)
                 }
             }
         }
