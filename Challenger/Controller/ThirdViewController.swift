@@ -17,6 +17,7 @@ class ThirdViewController: UIViewController {
         self.screen = ThirdScreenView()
         self.view = self.screen
         screen?.translationButton.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
+        screen?.translationButton.addTarget(self, action: #selector(navigate), for: .touchUpInside)
     }
 
     override func viewDidLoad() {
@@ -46,5 +47,10 @@ class ThirdViewController: UIViewController {
     @objc func buttonTap() {
         let test = screen?.boxText.text
         didTapButton?(test)
+    }
+
+    @objc func navigate() {
+        let nextPage = FouthViewController()
+        self.navigationController?.pushViewController(nextPage, animated: true)
     }
 }
