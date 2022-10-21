@@ -20,7 +20,7 @@ class FirstScreenViewTests: XCTestCase {
         XCTAssertNotNil(button.setTitle("Start", for: UIControl.State.normal))
         XCTAssertEqual(button.accessibilityLabel, "Start")
         XCTAssertNotNil(button.configuration)
-        XCTAssertNotNil(button.setTitleColor(UIColor.red, for: UIControl.State.normal))
+        XCTAssertNotNil(button.setTitleColor(UIColor.systemYellow, for: UIControl.State.normal))
         XCTAssertNotNil(button.titleLabel?.font)
         XCTAssertFalse(button.translatesAutoresizingMaskIntoConstraints)
     }

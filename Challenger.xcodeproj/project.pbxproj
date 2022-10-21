@@ -31,6 +31,7 @@
 		149B0C162902F70000A0BE19 /* UITestSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */; };
 		149B0C182903100500A0BE19 /* FouthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C172903100500A0BE19 /* FouthViewController.swift */; };
 		149B0C1A2903136D00A0BE19 /* FouthScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C192903136D00A0BE19 /* FouthScreenView.swift */; };
+		149B0C1C2903158700A0BE19 /* UnitTestThirdScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C1B2903158700A0BE19 /* UnitTestThirdScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSecondScreen.swift; sourceTree = "<group>"; };
 		149B0C172903100500A0BE19 /* FouthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FouthViewController.swift; sourceTree = "<group>"; };
 		149B0C192903136D00A0BE19 /* FouthScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FouthScreenView.swift; sourceTree = "<group>"; };
+		149B0C1B2903158700A0BE19 /* UnitTestThirdScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestThirdScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				14373B5B28F442F6006767C2 /* UnitTestFirstScreenView.swift */,
 				1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */,
+				149B0C1B2903158700A0BE19 /* UnitTestThirdScreenView.swift */,
 			);
 			path = ChallengerUnitTests;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			files = (
 				14373B6628F442F6006767C2 /* UITestsFirstScreen.swift in Sources */,
 				149B0C162902F70000A0BE19 /* UITestSecondScreen.swift in Sources */,
+				149B0C1C2903158700A0BE19 /* UnitTestThirdScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
