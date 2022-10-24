@@ -25,6 +25,7 @@
 		1481680428FD933C003052A4 /* ThirdScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680328FD933C003052A4 /* ThirdScreenView.swift */; };
 		14816808290012DA003052A4 /* GrootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14816807290012DA003052A4 /* GrootViewModel.swift */; };
 		1481680C29007395003052A4 /* UnitTestSecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */; };
+		148797822906B64C00124637 /* GrootCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148797812906B64C00124637 /* GrootCell.swift */; };
 		149B0C0F2902C0E600A0BE19 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C0E2902C0E600A0BE19 /* Button.swift */; };
 		149B0C112902D11300A0BE19 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C102902D11300A0BE19 /* Label.swift */; };
 		149B0C162902F70000A0BE19 /* UITestSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */; };
@@ -73,6 +74,7 @@
 		1481680328FD933C003052A4 /* ThirdScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenView.swift; sourceTree = "<group>"; };
 		14816807290012DA003052A4 /* GrootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrootViewModel.swift; sourceTree = "<group>"; };
 		1481680B29007395003052A4 /* UnitTestSecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestSecondScreenView.swift; sourceTree = "<group>"; };
+		148797812906B64C00124637 /* GrootCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrootCell.swift; sourceTree = "<group>"; };
 		149B0C0E2902C0E600A0BE19 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		149B0C102902D11300A0BE19 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		149B0C152902F70000A0BE19 /* UITestSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSecondScreen.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		14373B4028F442F5006767C2 /* Challenger */ = {
 			isa = PBXGroup;
 			children = (
+				148797802906B63400124637 /* Cells */,
 				14373B7A28F58B1C006767C2 /* Model */,
 				1481680629001288003052A4 /* ViewModel */,
 				14373B7628F457DF006767C2 /* Service */,
@@ -226,6 +229,14 @@
 				14373B4F28F442F6006767C2 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		148797802906B63400124637 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				148797812906B64C00124637 /* GrootCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +398,7 @@
 				1481680028FD7229003052A4 /* SecondScreenView.swift in Sources */,
 				14373B7828F45801006767C2 /* ApiGroot.swift in Sources */,
 				14373B7C28F58B2E006767C2 /* ModelGroot.swift in Sources */,
+				148797822906B64C00124637 /* GrootCell.swift in Sources */,
 				149B0C182903100500A0BE19 /* FouthViewController.swift in Sources */,
 				14373B4C28F442F5006767C2 /* Challenger.xcdatamodeld in Sources */,
 				14373B4628F442F5006767C2 /* FirstViewController.swift in Sources */,
