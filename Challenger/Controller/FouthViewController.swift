@@ -10,7 +10,7 @@ import UIKit
 
 class FouthViewController: UITableViewController {
 
-    private let vm = GrootViewModel()
+    private let viewModel = GrootListViewModel()
     private let text = ThirdScreenView()
 
     override func viewDidLoad() {
@@ -28,22 +28,25 @@ class FouthViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        vm.groots.count
+        viewModel.groots.count
+    }
+
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60.0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GrootCell", for: indexPath)
-        let groot = vm.groots[indexPath.row]
-
-        var content = cell.defaultContentConfiguration()
-
-        cell.contentConfiguration = content
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GrootCell", for: indexPath) as? GrootCell else {
+            fatalError("GrootCell is not defined")
+        }
+        let groot = viewModel.groots[indexPath.row]
+        cell.configure(groot)
         return cell
     }
 
     internal func translateGroot() async {
-        await vm.fetchGroots(text: text.boxText.text)
+        await viewModel.fetchGroots(text: text.boxText.text)
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
         }

@@ -8,7 +8,7 @@
  import Foundation
  import UIKit
 
-class GrootViewModel: ObservableObject {
+class GrootListViewModel: ObservableObject {
 
     @Published var groots: [ResponseGroot] = []
 
@@ -29,3 +29,22 @@ class GrootViewModel: ObservableObject {
 
     }
  }
+struct GrootViewModel {
+    private let groot: ResponseGroot
+
+    init(groot: ResponseGroot) {
+        self.groot = groot
+    }
+
+    var text: String {
+        groot.contents.text
+    }
+
+    var translated: String {
+        groot.contents.translated
+    }
+
+    var translation: String {
+        groot.contents.translation
+    }
+}
