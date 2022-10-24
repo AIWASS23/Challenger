@@ -34,7 +34,7 @@ class FouthScreenView: UIView {
 //    }
 
     override func didMoveToWindow() {
-        super.layoutSubviews()
+        super.didMoveToWindow()
         setGradientBackground()
         self.addSubview(pageTitleFouth)
         setupConstraints()
