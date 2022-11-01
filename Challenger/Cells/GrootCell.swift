@@ -62,7 +62,7 @@ struct GrootCellRepresentable: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        <#code#>
+        
     }
 }
 struct GrootCell_Previews: PreviewProvider {

@@ -41,7 +41,7 @@ class FouthViewController: UITableViewController {
             fatalError("GrootCell is not defined")
         }
         let groot = viewModel.groots[indexPath.row]
-        cell.configure(groot)
+        cell.configure(GrootViewModel(groot: groot))
         return cell
     }
 
