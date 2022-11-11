@@ -44,7 +44,7 @@ class FouthScreenView: UIView {
         NSLayoutConstraint.activate([
 
             pageTitleFouth.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 95),
-            pageTitleFouth.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            pageTitleFouth.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor)
         ])
     }
 }

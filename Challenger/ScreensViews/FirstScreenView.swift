@@ -41,7 +41,7 @@ class FirstScreenView: UIView {
 //    }
 
     override func didMoveToWindow() {
-        super.layoutSubviews()
+        super.didMoveToWindow()
         setGradientBackground()
         self.addSubview(navigationButtonFirst)
         self.addSubview(pageTitleFirst)

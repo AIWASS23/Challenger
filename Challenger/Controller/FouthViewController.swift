@@ -37,8 +37,9 @@ class FouthViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GrootCell", for: indexPath) as? GrootCell else {
-            fatalError("GrootCell is not defined")
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "GrootCell", for: indexPath) as? GrootCell else {
+                fatalError("GrootCell is not defined")
         }
         let groot = viewModel.groots[indexPath.row]
         cell.configure(GrootViewModel(groot: groot))

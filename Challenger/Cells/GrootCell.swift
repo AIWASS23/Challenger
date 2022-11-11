@@ -34,7 +34,6 @@ class GrootCell: UITableViewCell {
         return label
     }
 
-
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -62,7 +61,7 @@ struct GrootCellRepresentable: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+
     }
 }
 struct GrootCell_Previews: PreviewProvider {
